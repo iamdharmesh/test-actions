@@ -1,0 +1,23 @@
+name: 'PR Automator'
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - converted_to_draft
+      - ready_for_review
+
+jobs:
+  Validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: 10up/action-pr-automator@enhancement/44
+        with:
+          fail-label: needs:feedback
+          pass-label: needs:code-review
+          reviewers: |
+            iamdharmesh
+            faisal-alvi
+            wpghactionbot
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
