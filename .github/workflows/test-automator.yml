@@ -11,7 +11,7 @@ jobs:
   Validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: 10up/action-pr-automator@enhancement/44
+      - uses: 10up/action-pr-automator@enhancement/80
         with:
           fail-label: needs:feedback
           pass-label: needs:code-review
@@ -19,6 +19,8 @@ jobs:
             iamdharmesh
             faisal-alvi
             wpghactionbot
+          issue-comment: Hi {author}, Thank you for opening this issue. We will look into it and get back to you soon.
+          pr-comment: Hi {author}, Thank you for opening this PR. We will look into it and get back to you soon.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
