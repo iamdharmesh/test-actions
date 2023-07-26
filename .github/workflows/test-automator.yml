@@ -21,7 +21,6 @@ jobs:
           reviewers: |
             iamdharmesh
             faisal-alvi
-            wpghactionbot
           issue-comment: Hi {author}, Thank you for opening this issue. We will look into it and get back to you soon.
           pr-comment: Hi {author}, Thank you for opening this PR. We will look into it and get back to you soon.
         env:
