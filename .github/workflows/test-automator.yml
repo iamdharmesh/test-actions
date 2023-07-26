@@ -1,6 +1,9 @@
 name: 'PR Automator'
 on:
-  pull_request_target:
+  issues:
+    types:
+      - opened
+  pull_request:
     types:
       - opened
       - edited
