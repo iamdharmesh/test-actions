@@ -14,7 +14,7 @@ jobs:
   Validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: 10up/action-pr-automator@develop
+      - uses: 10up/action-pr-automator@enhancement/76
         with:
           fail-label: needs:feedback
           pass-label: needs:code-review
