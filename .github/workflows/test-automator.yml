@@ -14,7 +14,7 @@ jobs:
   Validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: 10up/action-pr-automator@develop
+      - uses: 10up/action-pr-automator@enhancement/76
         with:
           fail-label: needs:feedback
           pass-label: needs:code-review
@@ -23,6 +23,7 @@ jobs:
             faisal-alvi
           issue-comment: Hi {author}, Thank you for opening this issue. We will look into it and get back to you soon.
           pr-comment: Hi {author}, Thank you for opening this PR. We will look into it and get back to you soon.
+          comment-ignore-users: |
+            iamdharmesh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
