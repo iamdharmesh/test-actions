@@ -26,5 +26,8 @@ jobs:
           pr-comment: Hi {author}, Thank you for opening this PR. We will look into it and get back to you soon.
           comment-ignore-users: |
             iamdharmesh
+          changelog-validation: false
+          description-validation: false
+          credits-validation: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
