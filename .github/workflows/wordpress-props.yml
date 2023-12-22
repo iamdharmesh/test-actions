@@ -27,3 +27,4 @@ jobs:
         uses: iamdharmesh/wordpress-props@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+
