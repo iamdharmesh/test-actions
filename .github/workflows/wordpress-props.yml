@@ -8,7 +8,7 @@ on:
   pull_request_review:
   pull_request_review_comment:
 
-# Cancels all previous workflow runs for pull requests that have not completed.
+# Cancels all previous workflow runs for pull requests that have not been completed.
 concurrency:
   # The concurrency group contains the workflow name and the branch name for pull requests
   # or the commit hash for any other events.
@@ -25,7 +25,7 @@ jobs:
     # Co-authored-by: trailers for merging contributors.
     steps:
       - name: Compile contributor list
-        uses: iamdharmesh/wordpress-props@main
+        uses: iamdharmesh/wordpress-props@try/comment
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
