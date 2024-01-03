@@ -4,6 +4,7 @@ on:
   # Gathers all participants for pull requests to assist in giving proper credit.
   pull_request:
   issue_comment:
+    types: [created, edited, deleted]
   pull_request_review:
   pull_request_review_comment:
 
