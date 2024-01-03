@@ -25,7 +25,7 @@ jobs:
     # Co-authored-by: trailers for merging contributors.
     steps:
       - name: Compile contributor list
-        uses: iamdharmesh/wordpress-props@main
+        uses: iamdharmesh/wordpress-props@try/comment
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
