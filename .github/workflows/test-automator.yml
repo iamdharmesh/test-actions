@@ -27,5 +27,6 @@ jobs:
           comment-ignore-users: |
             iamdharmesh
           validate-changelog: false
+          validate-credits: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
