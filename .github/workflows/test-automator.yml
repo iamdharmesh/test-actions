@@ -28,5 +28,6 @@ jobs:
             iamdharmesh
           validate-changelog: false
           validate-credits: false
+          validate-description: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
