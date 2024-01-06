@@ -7,6 +7,7 @@ on:
     types:
       - opened
       - edited
+      - synchronize
       - converted_to_draft
       - ready_for_review
 
@@ -21,10 +22,13 @@ jobs:
           reviewers: |
             iamdharmesh
             faisal-alvi
-            wpghactionbot
           issue-comment: Hi {author}, Thank you for opening this issue. We will look into it and get back to you soon.
           pr-comment: Hi {author}, Thank you for opening this PR. We will look into it and get back to you soon.
           comment-ignore-users: |
             iamdharmesh
+          changelog-validation: false
+          description-validation: false
+          credits-validation: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
